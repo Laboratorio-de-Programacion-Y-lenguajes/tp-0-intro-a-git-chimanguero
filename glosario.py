@@ -30,25 +30,16 @@ def glosario_inicial():
         print(f"-> {termino}: {definicion}")
 
 
-# --- TAREA PARA EL ALUMNO ---
-# Instrucciones:
-# 1. Crea una rama 'feature-tu-termino'
-# 2. Crea una función nueva siguiendo el ejemplo de abajo
-# 3. Llámala dentro del bloque 'if __name__ == "__main__":'
-
-
-def agregar_definicion_alumno():
-    """
-    EJEMPLO: El alumno debe renombrar esta función y completar su término.
-    """
-    termino = "ORM"  # Reemplazar con el término asignado o elegido
-    definicion = "Object-Relational Mapping. Técnica para convertir datos entre sistemas incompatibles usando OOP."
-    print(f"[NUEVO] {termino}: {definicion}")
+def definicion_orm_django():
+    # 2. Definimos el término técnico
+    termino = "ORM (Object-Relational Mapping)"
+    explicacion = "Es una técnica que permite interactuar con la base de datos usando objetos de Python en lugar de escribir SQL crudo."
+    
+    print(f"--- {termino} ---")
+    print(explicacion)
 
 
 if __name__ == "__main__":
     mostrar_bienvenida()
     glosario_inicial()
-
-    # El alumno debe agregar la llamada a su función aquí:
-    # agregar_definicion_alumno()
+    definicion_orm_django()
