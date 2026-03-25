@@ -45,10 +45,19 @@ def agregar_definicion_alumno():
     definicion = "Object-Relational Mapping. Técnica para convertir datos entre sistemas incompatibles usando OOP."
     print(f"[NUEVO] {termino}: {definicion}")
 
+def definicion_orm_django():
+    # 2. Definimos el término técnico
+    termino = "ORM (Object-Relational Mapping)"
+    explicacion = "Es una técnica que permite interactuar con la base de datos usando objetos de Python en lugar de escribir SQL crudo."
+    
+    print(f"--- {termino} ---")
+    print(explicacion)
+
 
 if __name__ == "__main__":
     mostrar_bienvenida()
     glosario_inicial()
+    definicion_orm_django()
 
     # El alumno debe agregar la llamada a su función aquí:
     # agregar_definicion_alumno()
